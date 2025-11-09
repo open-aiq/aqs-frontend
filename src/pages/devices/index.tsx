@@ -16,7 +16,7 @@ export default function DevicesPage() {
       </div>
 
       {devices.length === 0 ? (
-        <div className="rounded-md border border-dashed p-8 text-center text-neutral-600">No devices yet. Register your first device.</div>
+        <div className="rounded-md border border-dashed p-8 text-center text-muted-foreground">No devices yet. Register your first device.</div>
       ) : (
         <Table>
           <TableHeader>

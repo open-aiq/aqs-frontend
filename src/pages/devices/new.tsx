@@ -36,15 +36,15 @@ export default function DeviceNewPage() {
     return (
       <section className="space-y-4">
         <h1 className="text-xl font-semibold">Device Registered</h1>
-        <p className="text-neutral-600">Copy and store this secret now. It may only be shown once later.</p>
-        <div className="rounded-md border bg-white p-4 space-y-2">
-          <div className="text-sm text-neutral-500">Device Secret</div>
+        <p className="text-muted-foreground">Copy and store this secret now. It may only be shown once later.</p>
+        <div className="rounded-md border bg-card p-4 space-y-2">
+          <div className="text-sm text-muted-foreground">Device Secret</div>
           <div className="mt-1 font-mono text-sm break-all">{submitted.secret}</div>
-          <div className="text-sm text-neutral-500">Placement</div>
+          <div className="text-sm text-muted-foreground">Placement</div>
           <div className="mt-1 text-sm capitalize">{submitted.placement}</div>
           {submitted.info ? (
             <>
-              <div className="text-sm text-neutral-500">Additional Info</div>
+              <div className="text-sm text-muted-foreground">Additional Info</div>
               <div className="mt-1 text-sm whitespace-pre-wrap">{submitted.info}</div>
             </>
           ) : null}

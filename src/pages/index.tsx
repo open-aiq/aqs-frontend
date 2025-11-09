@@ -5,7 +5,7 @@ export default function DashboardPage() {
   return (
     <section className="space-y-4">
       <h1 className="text-xl font-semibold">Welcome to OpenAIQ</h1>
-      <p className="text-neutral-600">Manage your air-quality devices and view PM2.5 measurements.</p>
+      <p className="text-muted-foreground">Manage your air-quality devices and view PM2.5 measurements.</p>
       <div className="flex gap-3">
         <Button asChild>
           <Link to="/devices">View Devices</Link>
